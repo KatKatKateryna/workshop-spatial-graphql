@@ -52,7 +52,22 @@ Password: postgis
 Database: workshop_graphql
 ```
 
-To use a desktop GUI like pgAdmin or QGIS against the Codespace's database, use the [GitHub CLI](https://cli.github.com/) to open a real local TCP tunnel (browser's "Ports" panel only proxies HTTP(S) — it can't carry the raw Postgres wire protocol). Leave the following command running, then point your desktop tool at `localhost:5432` using the credentials above:
+To use a desktop GUI like pgAdmin or QGIS against the Codespace's database, use the [GitHub CLI](https://cli.github.com/) to open a real local TCP tunnel (browser's "Ports" panel only proxies HTTP(S) — it can't carry the raw Postgres wire protocol).
+
+If you don't already have the GitHub CLI installed:
+
+```shell
+# Windows (winget)
+winget install --id GitHub.cli
+
+# macOS (Homebrew)
+brew install gh
+
+# Linux (Ubuntu — see https://github.com/cli/cli/blob/trunk/docs/install_linux.md for other distros)
+sudo apt install gh
+```
+
+Then authenticate once with `gh auth login` (if you authenticate via token, make sure you add scope 'codespaces'). Leave the following command running, then point your desktop tool at `localhost:5432` using the credentials above:
 
 ```shell
 gh codespace list  # find your codespace's name
