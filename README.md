@@ -40,9 +40,9 @@ In order to move forward make sure you have installed:
 
 For install procedures for local postgreSQL and pgadmin: [here](Requirements.md)
 
-### Running in GitHub Codespaces / the Dev Container
+### Running in GitHub Codespaces
 
-If you're using GitHub Codespaces, the database from step 1 is already created and restored automatically on first start — you can skip the manual restore above. The container uses **SQLTools** VS Code extension (with the PostgreSQL driver) preconfigured to reach it, so you can run every SQL snippet in this workshop straight from the editor, or via `psql` in the integrated terminal. Connection details:
+If you're using GitHub Codespaces, the database from step 1 is already created and restored automatically on first start — you can skip this step. The container uses **SQLTools** VS Code extension (with the PostgreSQL driver) preconfigured to reach it, so you can run every SQL snippet in this workshop straight from the editor, or via `psql` in the integrated terminal. Connection details:
 
 ```
 Host: localhost
