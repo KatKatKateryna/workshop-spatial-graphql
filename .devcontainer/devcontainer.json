@@ -8,8 +8,7 @@
   "portsAttributes": {
     "5000": {
       "label": "PostGraphile",
-      "onAutoForward": "silent",
-      "visibility": "public"
+      "onAutoForward": "silent"
     },
     "5432": {
       "label": "PostgreSQL/PostGIS",
